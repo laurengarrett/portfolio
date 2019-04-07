@@ -1,0 +1,156 @@
+﻿:root {
+    --main-green-op: rgba(176, 168, 0, 0.86);
+    --main-pink-op: rgba(199, 35, 37, 0.35);
+    --main-peach-op: rgba(216, 104, 12, 0.64);
+    --main-green: rgb(176, 168, 0);
+    --main-pink: rgb(199, 35, 37);
+    --main-peach: rgb(216, 104, 12);
+    --style-font: 'Rage';
+    --para-font: 'Javanese Text';
+}
+
+body {
+    text-align: center;
+    color: black;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+/*green header bar*/
+header {
+    background-color: var(--main-green);
+    color: white;
+    height: 50px;
+}
+
+/*logo in header*/
+#logo { 
+    position: absolute; 
+    left: 10px;
+    top: 15px;
+    font-family: var(--style-font);
+    font-size: 7vw;
+}
+
+/*hamburger menu*/
+#hamicon {
+    position: absolute;
+    right: 0px;
+    top: 20px;
+}
+
+/*hidden navigation*/
+#nav-menu {
+    display: none;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding-top: 50px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#nav-menu li {
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    font-family: var(--para-font);
+    font-size: 5vh;
+    background-color: var(--main-pink-op);
+    color: white;
+    box-sizing: border-box;
+    height: 15%;
+}
+
+/*close icon*/
+#close {
+    position: absolute;
+    right: 0px;
+    top: 20px;
+    display: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+/*initial language selection page*/
+#box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+#name {
+    font-family: var(--style-font);
+    font-size: 16vw;
+
+    background-color: var(--main-green-op);
+    color: white;
+
+    width:105vw;
+
+    transform: rotate(-7deg);
+}
+
+#language {
+    font-family: var(--para-font);
+    font-size: 4vw;
+
+    color: white;
+    width: 102vw;
+}
+
+#en {
+    background-color: var(--main-pink-op);
+    padding: 5px;
+
+    transform: rotate(-2deg);
+
+    -webkit-transition: margin-top 1s, margin-bottom 1s, padding-top 1s, padding-bottom 1s, transform 1s;
+    transition: margin-top 1s, margin-bottom 1s, padding-top 1s, padding-bottom 1s, transform 1s;
+}
+
+#en:hover{
+    margin-top: 60px;
+    margin-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transform: rotate(0deg);
+}
+
+#es {
+    background-color: var(--main-peach-op);
+    padding: 5px;
+
+    transform: rotate(4deg);
+
+    -webkit-transition: transform 1s, margin-top 1s, margin-bottom 1s, transform 1s;
+    transition: transform 1s, margin-top 1s, margin-bottom 1s, transform 1s;
+}
+
+#es:hover {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transform: rotate(0deg);
+}
